@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE= edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- set the title of web browser page -->
+        <title>Student Resume</title>
+        <link rel="icon" href="favicon.ico">
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #E4F9F5;
+                background-size: 150%;
+                background-image: url(../images-1.jpg);
+            }
+
+            .Res-Table {
+                border: #E4F9F5 solid 0px;
+                cursor: pointer;
+                margin-top: 25px;
+                margin-left: 25px;
+                font-size: 17px;
+            }
+
+            .Table-top {
+                height: 30px;
+            }
+
+            .circular
+            {
+            border-radius: 100%; 
+            border: solid black;
+            margin-top: 10px;
+            cursor: pointer;
+            }
+
+            .Res-bottom {
+                border: #E4F9F5 solid 0px;
+                cursor: pointer;
+                margin-left: 25px;
+                font-size: 17px;
+            }
+
+            .Graduate-Table {
+                margin-left: 25px;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                border-collapse: collapse;
+                font-size: 17px;
+                border-color: 1px solid  black;
+                width: 30%;
+            }
+
+            .hov:hover {
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: lightyellow;
+                border-bottom: 1px solid white;
+            }
+
+            #upper-row {
+                background-color: rgb(121, 88, 165);
+                border-radius: 5px;
+                color: white;
+            }
+
+            #r2, #r4 {
+                background-color: white;
+            }
+
+            .lists {
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+                margin-left: 30px;
+            }
+
+            .li-dl {
+                width: 28%;
+                list-style-type: disc;
+                background-color: #fa7979;
+                border-radius: 10px;
+            }
+
+            .li-ul {
+                width: 28%;
+                list-style-type: square;
+                background-color: #fa7979;
+                border-radius: 10px;
+            }
+
+            ul li {
+                background-color: #f18b7d;
+            }
+
+            ul li:hover {
+                cursor: pointer;
+                color: rgb(121, 88, 165);
+            }
+
+            .sign {
+                padding: 0;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 150px;
+                margin-left: 30px;
+                padding-bottom: 0;
+            }
+
+            .sign-para {
+                padding: 0;
+                margin-left: 30px;
+                cursor: pointer;
+                font-size: large;
+                font-weight: 500;
+            }
+
+            .sign-para:hover {
+                color: #f84f4f;
+            }
+
+            .find-me {
+                padding: 0;
+                margin-left: 30px;
+            }
+
+            .hand-shake {
+                cursor: pointer;
+            }
+
+            .boi-gif {
+                cursor: pointer;
+                margin-right: 240px;
+                margin-bottom: 60px;
+            }
+
+            .web-dev {
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .gmail {
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .web-dev:hover {
+                color: #f84f4f;
+            }
+
+            .gmail:hover {
+                color: #f84f4f;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- we can use &nbsp for giving a space  -->
+        <!-- Here I Used table with border value 0 to display the data of student Systematically. -->
+        <table class="Res-Table">
+            <tr>
+                <td>
+                    <table border="0">
+                        <tr class="Table-top">
+                            <td width = "210" >Name : </td>
+                            <td>Harsh Chaudhari &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+
+                        <tr class="Table-top">
+                            <td>Date of Birth : </td>
+                            <td>25/08/2003</td>
+                        </tr>
+
+                        <tr class="Table-top">
+                            <td>Phone : </td>
+                            <td>9033200766</td>
+                        </tr>
+
+                    </table>
+                </td>
+                <td><img class="circular" src="./Harsh.jpg" alt=""></td>
+            </tr>
+        </table>
+
+        <img src = "code boy.gif" align = "right" height = "550" width = "550" class="boi-gif" transform: rotateY(180deg);>
+
+        <table class="Res-bottom">
+            <tr class="Table-top">
+                <td width = "210" >Email : </td>
+                <td>harsh.j.chaudhari141@gamil.com</td>
+            </tr>
+
+            <tr class="Table-top">
+                <td>Address of Correspondence : </td>
+                <td>140-B, Near Swaraj Ashram, Vedachhi.</td>
+            </tr>
+        </table><br>
+
+        
+
+        <!-- make a table for Year, Degree, Name of Collage and %of marks and also set the width of the table data -->
+        <table class="Graduate-Table">
+            <div class="Gra-thtd">
+                <tr class="hov" id="upper-row">
+                    <th>Year</th>
+                    <th>Degree</th>
+                    <th>Name of College</th>
+                    <th>% of marks</th>
+                </tr>
+
+                <tr class="hov">
+                    <td>2021</td>
+                    <td>B.Tech</td>
+                    <td>IIIT Vadodara</td>
+                    <td>81.50</td>
+                </tr>
+
+                <tr class="hov" id="r2">
+                <td>2022</td>
+                <td>B.Tech</td>
+                <td>IIIT Vadodara</td>
+                <td style="text-align:center">-</td>
+                </tr>
+
+                <tr class="hov">
+                <td>2023</td>
+                <td>B.Tech</td>
+                <td>IIIT Vadodara</td>
+                <td style="text-align:center">-</td>
+                </tr>
+
+                <tr class="hov" id="r4">
+                <td>2024</td>
+                <td>B.Tech</td>
+                <td>IIIT Vadodara</td>
+                <td style="text-align:center">-</td>
+                </tr>
+
+                <!-- make a blank row in the table  -->
+                <tr class="hov">
+                    <td> <br> </td>
+                    <td> <br> </td>
+                    <td> <br> </td>
+                    <td> <br> </td>
+                </tr>
+            </div>
+        </table>
+
+        <!-- display the Hobbies by using of Description List -->
+
+        <div class="lists">
+            <h4>Hobbies : </h4>
+            <ul class="li-dl">
+                <li>Learning Something and Exploring</li>
+                <li>Playing video games &amp; volleyball</li>
+                <li>Travelling</li>
+            </ul>
+    
+            <!-- display the Languages by using of Unordered List -->
+            <h4>Language Known : </h4>
+            <ul class="li-ul">
+                <li>Englsih</li>
+                <li>Hindi</li>
+                <li>Gujarati</li>
+            </ul>
+            <br>
+        </div>
+        
+        <!-- Add the Image of student signature and set the dimension -->
+        <div class="sign">
+            <img src="sign.jpg" alt="My Resume" width="150" height="100" border="3px" >      
+        </div>
+        <p class="sign-para">Signature of student</p> 
+
+        <div class="find-me">
+            <p> &nbsp;&nbsp;- 🌱 I’m currently learning <span class="web-dev">Web development.</span><br>
+                &nbsp;&nbsp;- 📫 How to reach me <span class="gmail">harsh.j.chaudhari141@gmail.com</span>
+            </p> 
+            <h3 align="left" class="hand-shake"> <img src="3d-hands-fun-and-wild-378.png" alt="shake-hands" height="20" width="40"> Connect with me :</h3>
+            <p align="left">
+            <a href="https://linkedin.com/in/harsh-chaudhari-86aa91201" target="blank"><img align="center" src="3d-fluency-linkedin.png" alt="harsh chaudhari" height="50" width="50" /></a>
+            <a href="https://www.codechef.com/users/iiitv202052311" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="chaudhari harsh jaydipbhai" height="40" width="40" /></a>
+            <a href="https://www.hackerrank.com/harsh_j_chaudha1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="harsh chaudhari" height="40" width="40" /></a>
+            <a href="https://instagram.com/hacch_141" target="blank"><img align="center" src="3d-fluency-instagram.png" alt="hacch_141" height="50" width="50" /></a>
+            </p>
+        </div>
+    </body>
+</html>
